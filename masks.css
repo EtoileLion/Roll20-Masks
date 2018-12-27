@@ -767,7 +767,7 @@ input.sheet-showhide:checked ~ .sheet-subbox {display: none;}
 	width: 90px !important;
 }
 .sheet-rolltemplate-pwinfo {
-	background: #d3e5f5 url("https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/burst.png?raw=true") repeat left top;
+	background: #d3e5f5 url("https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/boxback.png?raw=true") repeat left top;
 	border: 4px outset #4f7082;
 	padding: 3px;
 }
