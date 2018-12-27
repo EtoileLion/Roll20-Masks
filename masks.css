@@ -152,10 +152,31 @@ p {
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-drives,
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-heart,
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-doomtrack,
+	.charsheet .sheet-maindiv .sheet-col .sheet-section-title-sanctuary,	
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-time-period,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-future-self,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-legacy,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-secretidentity,	
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-burn,
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-mentor,
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-lessons,
-    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-contacts{
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-other-half,	
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-bonds,		
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-contacts,
+	    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-audience,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-shame,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-soldier,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-memories,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-roots,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-lineage,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-respect,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-bio,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-backstory,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-teammeet,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-relationships,
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-look,
+    .charsheet .sheet-maindiv .sheet-section-title-notes	
+{
         height: 57px;
     	box-sizing: border-box;
     	-moz-box-sizing: border-box;
@@ -181,14 +202,54 @@ p {
         background: url('http://i.imgur.com/9o6rwdm.png') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-doomtrack {
         background: url('http://i.imgur.com/HmVXW5p.png') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-sanctuary {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/sanctuary.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }		
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-time-period {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/generation.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-future-self {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/futureself.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-legacy {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/legacy.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-secretidentity {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/secretid.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }		
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-burn {
         background: url('http://i.imgur.com/4p7XJSb.png') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-mentor {
         background: url('http://i.imgur.com/TRVVvDp.png') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-lessons {
         background: url('http://i.imgur.com/AcsBm9H.png') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-other-half {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/otherhalf.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }		
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-bonds {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/bonds.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }				
     .charsheet .sheet-maindiv .sheet-col .sheet-section-title-contacts {
         background: url('http://i.imgur.com/k68TLsZ.png') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-audience {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/audience.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-shame {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/shame.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-soldier {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/aegis.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-memories {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/memories.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-roots {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/roots.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-lineage {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/lineage.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-respect {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/respect.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-bio {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/bio.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-backstory {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/backstory.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-teammeet {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/firstmeet.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-relationships {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/relationships.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-col .sheet-section-title-look {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/look.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
+    .charsheet .sheet-maindiv .sheet-section-title-notes {
+        background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/notes.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }		
 
 		
 /* french images */		
@@ -263,10 +324,13 @@ label.sheet-attr {
         width: 50px;
     	box-sizing: border-box;
     }
+	div.repitem button.sheet-squawk:before {
+		font-family: "pictos";
+		content: "q";
+	}
 
 /* Label: */
     div.repitem .sheet-movenametextlabel {
-        margin-left: 37px;
         width: 50px;
         box-sizing: border-box;
     }
@@ -288,7 +352,7 @@ label.sheet-attr {
         box-sizing: border-box;
     }
     .sheet-passives div.repitem input[type=text]{
-        width: 215px;
+        width: 184px;
         padding-left: 8px;
         font-weight: bold;
         font-size: 1em;
@@ -352,71 +416,44 @@ label.sheet-attr {
     }
 
 /* all the playbook selection wizardry */
-    .sheet-beacon, 
-    .sheet-bull, 
-    .sheet-delinquent, 
-    .sheet-doomed, 
-    .sheet-janus, 
-    .sheet-legacy, 
-    .sheet-nova, 
-    .sheet-outsider, 
-    .sheet-protege, 
-    .sheet-transformed, 
-    .sheet-innocent,
-    .sheet-joined,
-    .sheet-newborn,
-    .sheet-reformed,
-    .sheet-star,
-    .sheet-something {
+    .sheet-playbook-hidden {
         display: none;
     }
     
     .sheet-playbookSelected {
         display: none;
     }
-    
-    .sheet-lock:checked ~ .sheet-playbook,
-    .sheet-lock:checked ~ .sheet-playbook + label {
-    	display: none;
-    }
-    .sheet-lock:checked ~ .sheet-playbook:checked,
-    .sheet-lock:checked ~ .sheet-playbook:checked + label,
-    .sheet-lock:checked ~ .sheet-playbookSelected {
-    	display: inline-block;
-    }
-    
-    .sheet-lock:not(:checked) ~ .sheet-playbook,
-    .sheet-lock:not(:checked) ~ .sheet-playbook + label {
-    	display: inline-block;
-    }
-    
-    .sheet-lock:checked ~ .sheet-classcol {
-    	display: none;
-    }
-    
-    .sheet-classcol > .sheet-playbook:checked,
-    .sheet-classcol > .sheet-playbook:checked + label {
-    	display: inline-block;
-    }
-    
+       
     input.sheet-showhide:checked ~ .sheet-subbox {display: none;}
     
-    .sheet-isbeacon:checked ~ .sheet-beacon,
-    .sheet-isbull:checked ~ .sheet-bull,
-    .sheet-isdelinquent:checked ~ .sheet-delinquent,
-    .sheet-isdoomed:checked ~ .sheet-doomed,
-    .sheet-isjanus:checked ~ .sheet-janus,
-    .sheet-islegacy:checked ~ .sheet-legacy,
-    .sheet-isnova:checked ~ .sheet-nova,
-    .sheet-isoutsider:checked ~ .sheet-outsider,
-    .sheet-isprotege:checked ~ .sheet-protege,
-    .sheet-istransformed:checked ~ .sheet-transformed,
-    .sheet-isinnocent:checked ~ .sheet-innocent,
-    .sheet-isjoined:checked ~ .sheet-joined,
-    .sheet-isnewborn:checked ~ .sheet-newborn,
-    .sheet-isreformed:checked ~ .sheet-reformed,
-    .sheet-isstar:checked ~ .sheet-star,
-    .sheet-issomething:checked ~ .sheet-something {
+    .sheet-playbookSelected[value="Beacon"] ~ .sheet-beacon,
+    .sheet-playbookSelected[value="Bull"] ~ .sheet-bull,
+    .sheet-playbookSelected[value="Delinquent"] ~ .sheet-delinquent,
+    .sheet-playbookSelected[value="Doomed"] ~ .sheet-doomed,
+    .sheet-playbookSelected[value="Janus"] ~ .sheet-janus,
+    .sheet-playbookSelected[value="Legacy"] ~ .sheet-legacy,
+    .sheet-playbookSelected[value="Nova"] ~ .sheet-nova,
+    .sheet-playbookSelected[value="Outsider"] ~ .sheet-outsider,
+    .sheet-playbookSelected[value="Protege"] ~ .sheet-protege,
+    .sheet-playbookSelected[value="Transformed"] ~ .sheet-transformed,
+    .sheet-playbookSelected[value="Innocent"] ~ .sheet-innocent,
+    .sheet-playbookSelected[value="Joined"] ~ .sheet-joined,
+	.sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Beacon"] ~ .sheet-beacon,
+	.sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Bull"] ~ .sheet-bull,
+	.sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Janus"] ~ .sheet-janus,
+	.sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Legacy"] ~ .sheet-legacy,
+	.sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Protege"] ~ .sheet-protege,
+	.sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Doomed"] ~ .sheet-doomed,
+	.sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Nova"] ~ .sheet-nova,	
+    .sheet-playbookSelected[value="Newborn"] ~ .sheet-newborn,
+    .sheet-playbookSelected[value="Reformed"] ~ .sheet-reformed,
+    .sheet-playbookSelected[value="Star"] ~ .sheet-star,
+	.sheet-playbookSelected[value="Brain"] ~ .sheet-brain,
+    .sheet-playbookSelected[value="Soldier"] ~ .sheet-soldier,
+    .sheet-playbookSelected[value="Harbinger"] ~ .sheet-harbinger,
+    .sheet-playbookSelected[value="Nomad"] ~ .sheet-nomad,
+    .sheet-playbookSelected[value="Scion"] ~ .sheet-scion,
+    .sheet-playbookSelected[value="Something"] ~ .sheet-something {
     	display: block;
     }
     
@@ -476,6 +513,7 @@ label.sheet-attr {
 
 
 /* The Doomed */
+    .sheet-innocent .sheet-future-cons + span, 
     .sheet-doomed .sheet-doomsign,
     .sheet-doomed .sheet-doomsignfinal{
         text-decoration: line-through;
@@ -484,10 +522,12 @@ label.sheet-attr {
         padding-right: 0px;
     }
     
+	
     .sheet-doomed .sheet-doomsignmarked{
         margin-left: 7px;
     }
     
+	.sheet-innocent .sheet-future-cons:checked + span,
     .sheet-doomed .sheet-doomsignmarked:checked + .sheet-doomsign{
         text-decoration: underline;
         font-weight: bold;
@@ -654,9 +694,64 @@ label.sheet-attr {
 		margin-bottom: 0px;
 		margin-top: 10px;
 	}
+	.sheet-page2 label.sheet-pfcontainer {
+		margin-top: 0px;
+		margin-bottom: 12px;
+	}
 	
 	.sheet-page textarea {
-		width: 98%;
+		width: 96%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.sheet-page3 label.sheet-selects {
+		width: 124px;
+	}
+	.sheet-page3 .sheet-row {
+	    background: #d3e5f5 url(http://imgsrv.roll20.net/?src=i.imgur.com/b61mWlr.png) repeat left top;
+	}
+	
+	.sheet-heart select {
+		width: 160px;
+	}
+	.sheet-doomed select {
+		margin-left: 5px;
+	}
+	.sheet-doomed input[type='text'] {
+		width: 208px !important;
+	}
+	
+	.sheet-joined .sheet-otherhalf-st:checked ~ span,
+	.sheet-doomed .sheet-sanctuarycomp:checked + .sheet-sanctuarycon,
+	.sheet-innocent .sheet-future-st:checked ~ span
+	{
+		text-decoration: line-through;
+	}
+	.sheet-innocent .sheet-future-circled:checked ~ span
+	{
+		border: 1px solid black;
+	}
+	.sheet-reformed label {
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+	.sheet-respect hr,
+	.sheet-reformed hr {
+		border-top: 1px solid black;
+	}
+	.sheet-dots,
+	.sheet-shame {
+	margin-left: 5px;
+	}
+	.sheet-shame textarea {
+		width: 95%;
+	}
+	.sheet-dots input {
+		width: 168px;
+	}
+	.sheet-respect-type {
+	width: 100% !important;
+	}
+	.sheet-respect-label {
+	width: 90px !important;
 	}
