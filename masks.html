@@ -383,7 +383,7 @@
 					<div class="sheet-innocent sheet-playbook-hidden">
 						<div class="sheet-section-title-time-period">					
 						</div>						
-						<div class="innocent">
+						<div class="generation">
 							<select name='attr_innocenttp'>
 								<option>the 40's-50's: Gold Generation</option>
 								<option>the 60's-70's: Silver Generation</option>
@@ -392,7 +392,7 @@
 						</div>
 						<div class="sheet-section-title-future-self">					
 						</div>						
-						<div class="innocent">
+						<div class="futureself">
 							<label>Your Future Path:</label>
 						   <div style='font-family: pictos'>L_</div>
 							<div><input type='checkbox' class="future-circled" name='attr_futureself_c1'><input type='checkbox' class="future-st" name='attr_futureself_s1'><span>They lost someone they cared about deeply.<span></span></div>
@@ -404,7 +404,7 @@
 							<div><input type='checkbox' class="future-circled" name='attr_futureself_c7'><input type='checkbox' class="future-st"name='attr_futureself_s7'><span>They publicly battled another hero.</span></div>
 							<div><input type='checkbox' class="future-circled" name='attr_futureself_c8'><input type='checkbox' class="future-st" name='attr_futureself_s8'><span>They injured an innocent.</span></div>
 						</div><br>
-						<div class="innocent">
+						<div class="futureself">
 							<label>Path Consequences:</label>
 							<div><input type='checkbox' class="future-cons" name="attr_futureself_con1"><span>Replace <strong>comfort or support</strong> with <strong>coldly dismiss</strong></span></div>
 							<div><input type='checkbox' class="future-cons" name="attr_futureself_con2"><span>Replace <strong>defend someone</strong> with <strong>aggressively defend a large group or area</strong></span></div>
@@ -417,7 +417,7 @@
 					<div class="sheet-legacy sheet-playbook-hidden">
 						<div class="sheet-section-title-legacy">					
 						</div>						
-						<div class="legacy">
+						<div class="yourlegacy">
 							<table>
 								<tr><td>
 									<button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Legacy Reaction}} {{roll_mod=[[@{savior}]]}} {{result=[[2d6 + [[{[[{[[@{savior} + ?{Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_legacy'></button> 
@@ -512,6 +512,7 @@
 					<div class="sheet-joined sheet-playbook-hidden">
 					    <div class="sheet-section-title-other-half">
 						</div>
+						<div class='sheet-otherhalf'>
 						<input type="text" name="attr_joinedotherhalf" placeholder="(My Other Half is....)">
 						they are a
 						<select name="attr_joinedPairedClass">
@@ -524,8 +525,9 @@
 							<option value="Doomed">Doomed</option>
 							<option value="Nova">Nova</option>							
 						</select> character.
+						</div>
 						<div class="sheet-section-title-bonds"></div>
-						<div class="joined">
+						<div class="bonds">
 						<label>Bonds:</label>
 						    <div style='font-family:pictos'>3_</div>
 							<div><input type='checkbox' checked name='attr_otherhalf-bonds1'><input type='checkbox' class="otherhalf-st" name='attr_otherhalf-bonds1-st'><span>Two Of A Kind</span></div>
@@ -570,6 +572,7 @@
 					<div class="sheet-star sheet-playbook-hidden">
 						<div class="sheet-section-title-audience">   
 						</div>
+						<div class='audience'>
 						<label>Audience Similarities:</label><br>
 						<input type='checkbox' name='attr_audiencelike1'>You're just like them<br>
 						<input type='checkbox' name='attr_audiencelike2'>You're a dangerous person; a bad seed.<br>
@@ -613,6 +616,7 @@
 							<option>They require chemistry with your allies</option>
 						</select>
 						<button type='roll' value='&{template:aw} {{name=@{character_name}}} {{roll_name=Ask the Audience}} {{result=[[2d6 + [[{[[{[[@{superior} + ?{Situational bonus/penalty?|0}]],-3}dl1]],4}kl1]][Modifier]]]}}' name='roll_seekhelp'>Ask the Audience</button> 
+						</div>
 					</div>					
 
 					<div class="sheet-brain sheet-playbook-hidden">
@@ -666,11 +670,14 @@
           
         <div class="sheet-nomad sheet-playbook-hidden">
           <div class="sheet-section-title-roots"></div>
-          I have given out <input type='number' min=0 value=0 name="attr_roots_influence"> influence.
+          <div class="roots">
+		  I have given out <input type='number' min=0 value=0 name="attr_roots_influence"> influence.
+		  </div>
          </div>
 
         <div class="sheet-scion sheet-playbook-hidden">
           <div class="sheet-section-title-lineage"></div>
+		  <div class='lineage'>
           My parent was a <select name='attr_lineage_type'>
           <option>deadly mercenary</option>
           <option>masterful thief</option>
@@ -713,6 +720,7 @@
 					<option>Mastery of a Skillset</option>
 				</select>
 			</fieldset>
+		  </div>
 			<div class="sheet-section-title-respect"></div>
 			<div class='sheet-respect'>
 			<fieldset class="repeating_respectneeded">
@@ -777,8 +785,8 @@
 		</div>
 		<div class="sheet-3colrow">
 			<div class="sheet-col odd">
+				<div class="sheet-class-moves sheet-section-title-bio"></div>			
 				<div class="sheet-bio">
-					<div class="sheet-class-moves sheet-section-title-bio"></div>
 					<label>HERO NAME:</label><input type='text' name='attr_heroname'><br>
 					<label>REAL NAME:</label><input type='text' name='attr_realname' placeholder='(if different)'>
 					<br><br>
@@ -793,8 +801,8 @@
 				<textarea name='attr_relationships' placeholder="(Your relationships are...)"></textarea>
 			</div>
 			<div class="sheet-col odd">
-				<div class="sheet-look">
-					<div class="sheet-class-moves sheet-section-title-look"></div>	
+				<div class="sheet-class-moves sheet-section-title-look"></div>	
+				<div class="sheet-look">					
 					<label>Gender</label><input type='text' name='attr_gender'><br>				
 					<label>Race/Type</label><input type='text' name='attr_race'><br>
 					<label>Age</label><input type='text' name='attr_age'><br>					

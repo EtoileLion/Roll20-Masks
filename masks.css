@@ -708,7 +708,7 @@ label.sheet-attr {
 		width: 124px;
 	}
 	.sheet-page3 .sheet-row {
-	    background: #d3e5f5 url(http://imgsrv.roll20.net/?src=i.imgur.com/b61mWlr.png) repeat left top;
+	    background: #d3e5f5 url("http://i.imgur.com/b61mWlr.png") repeat left top;
 	}
 	
 	.sheet-heart select {
@@ -739,7 +739,18 @@ label.sheet-attr {
 	.sheet-reformed hr {
 		border-top: 1px solid black;
 	}
+	.sheet-look,
+	.sheet-bio,
 	.sheet-dots,
+	.sheet-secretidentity,
+	.sheet-yourlegacy,
+	.sheet-generation,
+	.sheet-futureself,
+	.sheet-otherhalf,
+	.sheet-bonds,
+	.sheet-roots,
+	.sheet-lineage,
+	.sheet-audience,
 	.sheet-shame {
 	margin-left: 5px;
 	}
@@ -754,4 +765,20 @@ label.sheet-attr {
 	}
 	.sheet-respect-label {
 	width: 90px !important;
+	}
+	.sheet-rolltemplate-pwinfo {
+		background: #d3e5f5 url("https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/burst.png?raw=true") repeat left top;
+		border: 4px outset #4f7082;
+		padding: 3px;
+	}
+	.sheet-rolltemplate-pwinfo table {
+		width: 100%;
+	}
+	.sheet-rolltemplate-pwinfo th {
+		text-align: center;
+	}
+	.sheet-rolltemplate-pwinfo th i {
+		text-transform: capitalize;
+		font-weight: normal;
+		font-size: x-small;
 	}
