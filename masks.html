@@ -1,4 +1,4 @@
-<!-- TableStory MASKS Sheet 1.0 -->
+<!-- TableStory MASKS Sheet 1.1 -->
 <!-- by EtoileLion, based off of the original MASKS roll20 sheet by Matt Morton. -->
 <!-- Copyrights for material to make this sheet belong to the publisher. Please don't sue me. -->
 <div class='sheet-maindiv'>
@@ -133,12 +133,18 @@
 					</div>
 				</div>
 				<!-- advancements -->
-				<div>
+			 <div>
 					<div class="sheet-advancements sheet-section-title-advancements"></div>
 					<fieldset class="repeating_advancements"> 
 						<input type="text" name="attr_advancements" placeholder="(what did you take?)" data-i18n-placeholder="whatdidyoutake" autocomplete="off">
 					</fieldset>
 				</div>
+			<div>
+					<div class="sheet-abilities sheet-section-title-abilities"></div>
+					<fieldset class="repeating_abilities"> 
+						<input type="text" name="attr_abilities" placeholder="(what did you take?)" data-i18n-placeholder="whatdidyoutake" autocomplete="off">
+					</fieldset>
+			</div>
 			</div>
 			
 			
@@ -236,6 +242,19 @@
 				<div class="sheet-subbox">
 					<input type="hidden" name="attr_playbook" class="sheet-playbookSelected">					
 					<input type="hidden" name="attr_joinedPairedClass" class="sheet-joinedPairedClass">
+					<input type="hidden" name="attr_doomedadv_nova" class="sheet-doomedadv_nova">
+					<input type="hidden" name="attr_janusadv_beacon" class="sheet-janusadv_beacon">
+					<input type="hidden" name="attr_legacyadv_doomed" class="sheet-legacyadv_doomed">
+					<input type="hidden" name="attr_novaadv_bull" class="sheet-novaadv_bull">
+					<input type="hidden" name="attr_outsideradv_janus" class="sheet-outsideradv_janus">
+					<input type="hidden" name="attr_transformedadv_doomed" class="sheet-transformedadv_doomed">
+					<input type="hidden" name="attr_scionadv_janus" class="sheet-scionadv_janus">
+					<input type="hidden" name="attr_brainadv_doomed" class="sheet-brainadv_doomed">
+					<input type="hidden" name="attr_brainadv_beacon" class="sheet-brainadv_beacon">
+					<input type="hidden" name="attr_reformedadv_beacon" class="sheet-reformedadv_beacon">
+					<input type="hidden" name="attr_newbornadv_nova" class="sheet-newbornadv_nova">
+					<input type="hidden" name="attr_innocentadv_protege" class="sheet-innocentadv_protege">
+					<input type="hidden" name="attr_staradv_legacy" class="sheet-staradv_legacy">
 					<div class="sheet-beacon sheet-playbook-hidden">
 						<div class="sheet-section-title-drives">
 						</div>
@@ -313,6 +332,8 @@
 							<input type="checkbox" name="attr_doomfinal" class="doomsignmarked">
 							<label data-i18n="yourdoomcomes" class="sheet-doomsignfinal">Your doom comes</label>
 						</div>
+						</div>						
+						<div class="sheet-doomed-sanctuary sheet-playbook-hidden">						
 						<div class="sheet-section-title-sanctuary">
 						</div>
 						<label>Features</label>
@@ -397,25 +418,54 @@
 						</div>						
 						<div class="futureself">
 							<label>Your Future Path:</label>
-							<div style='font-family: pictos'>L_</div>
-							<div><input type='checkbox' class="future-circled" name='attr_futureself_c1'><input type='checkbox' class="future-st" name='attr_futureself_s1'><span>They lost someone they cared about deeply.<span></span></div>
-								<div><input type='checkbox' class="future-circled" name='attr_futureself_c2'><input type='checkbox' class="future-st" name='attr_futureself_s2'><span>The failed horrifically in a noble pursuit or cause.</span></div>
-								<div><input type='checkbox' class="future-circled" name='attr_futureself_c3'><input type='checkbox' class="future-st" name='attr_futureself_s3'><span>They committed a major crime.</span></div>
-								<div><input type='checkbox' class="future-circled" name='attr_futureself_c4'><input type='checkbox' class="future-st" name='attr_futureself_s4'><span>They betrayed a close friend or ally.</span></div>
-								<div><input type='checkbox' class="future-circled" name='attr_futureself_c5'><input type='checkbox' class="future-st" name='attr_futureself_s5'><span>They won a victory at enormous cost to the world around them.</span></div>
-								<div><input type='checkbox' class="future-circled" name='attr_futureself_c6'><input type='checkbox' class="future-st" name='attr_futureself_s6'><span>They killed someone.</span></div>
-								<div><input type='checkbox' class="future-circled" name='attr_futureself_c7'><input type='checkbox' class="future-st"name='attr_futureself_s7'><span>They publicly battled another hero.</span></div>
-								<div><input type='checkbox' class="future-circled" name='attr_futureself_c8'><input type='checkbox' class="future-st" name='attr_futureself_s8'><span>They injured an innocent.</span></div>
-							</div><br>
-							<div class="futureself">
-								<label>Path Consequences:</label>
-								<div><input type='checkbox' class="future-cons" name="attr_futureself_con1"><span>Replace <strong>comfort or support</strong> with <strong>coldly dismiss</strong></span></div>
-								<div><input type='checkbox' class="future-cons" name="attr_futureself_con2"><span>Replace <strong>defend someone</strong> with <strong>aggressively defend a large group or area</strong></span></div>
-								<div><input type='checkbox' class="future-cons" name="attr_futureself_con3"><span>Replace <strong>provoke someone</strong> with <strong>threaten someone</strong></span></div>
-								<div><input type='checkbox' class="future-cons" name="attr_futureself_con4"><span>Replace <strong>reject someone's Influence</strong> with <strong>spit in the face of guidance or Influence</strong></span></div>
-								<div><input type='checkbox' class="future-cons" name="attr_futureself_con5"><span>Become an NPC antagonist</span></div>							
+							<div style='font-family: pictos'>
+								L_
+							</div>
+							<div>
+								<input type='checkbox' class="future-circled" name='attr_futureself_c1'><input type='checkbox' class="future-st" name='attr_futureself_s1'><span>They lost someone they cared about deeply.</span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-circled" name='attr_futureself_c2'><input type='checkbox' class="future-st" name='attr_futureself_s2'><span>The failed horrifically in a noble pursuit or cause.</span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-circled" name='attr_futureself_c3'><input type='checkbox' class="future-st" name='attr_futureself_s3'><span>They committed a major crime.</span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-circled" name='attr_futureself_c4'><input type='checkbox' class="future-st" name='attr_futureself_s4'><span>They betrayed a close friend or ally.</span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-circled" name='attr_futureself_c5'><input type='checkbox' class="future-st" name='attr_futureself_s5'><span>They won a victory at enormous cost to the world around them.</span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-circled" name='attr_futureself_c6'><input type='checkbox' class="future-st" name='attr_futureself_s6'><span>They killed someone.</span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-circled" name='attr_futureself_c7'><input type='checkbox' class="future-st"name='attr_futureself_s7'><span>They publicly battled another hero.</span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-circled" name='attr_futureself_c8'><input type='checkbox' class="future-st" name='attr_futureself_s8'><span>They injured an innocent.</span>
 							</div>
 						</div>
+						<br>
+						<div class="futureself">
+							<label>Path Consequences:</label>
+							<div>
+								<input type='checkbox' class="future-cons" name="attr_futureself_con1"><span>Replace <strong>comfort or support</strong> with <strong>coldly dismiss</strong></span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-cons" name="attr_futureself_con2"><span>Replace <strong>defend someone</strong> with <strong>aggressively defend a large group or area</strong></span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-cons" name="attr_futureself_con3"><span>Replace <strong>provoke someone</strong> with <strong>threaten someone</strong></span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-cons" name="attr_futureself_con4"><span>Replace <strong>reject someone's Influence</strong> with <strong>spit in the face of guidance or Influence</strong></span>
+							</div>
+							<div>
+								<input type='checkbox' class="future-cons" name="attr_futureself_con5"><span>Become an NPC antagonist</span>
+							</div>							
+						</div>
+					</div>
 						
 						<div class="sheet-legacy sheet-playbook-hidden">
 							<div class="sheet-section-title-legacy">					
@@ -456,6 +506,21 @@
 								<input type="number" name="attr_burnhold" min="0">
 							</div>
 							<label data-i18n="resetto0attheend" class="sheet-burntagline">(reset to 0 at the end of the scene)</label>
+							<label data-i18n="novaflares">Flares:</label>
+							<fieldset class="repeating_flares">
+								<select name="attr_flare">
+									<option>Reality Storm</option>
+									<option>Shielding</option>
+									<option>Constructs</option>
+									<option>Moat</option>
+									<option>Worship</option>
+									<option>Move</option>
+									<option>Boost</option>
+									<option>Overcharge</option>
+									<option>Elemental Awareness</option>
+									<option>Snatch</option>
+								</select>
+							</fieldset>
 						</div>
 						
 						<div class="sheet-protege sheet-playbook-hidden">
@@ -519,14 +584,21 @@
 								<input type="text" name="attr_joinedotherhalf" placeholder="(My Other Half is....)">
 								they are a
 								<select name="attr_joinedPairedClass">
-									<option value="">Other</option>							
 									<option value="Beacon">Beacon</option>
+									<option value="Brain">Brain</option>
 									<option value="Bull">Bull</option>
+									<option value="Doomed">Doomed</option>
+									<option value="Innocent">Innocent</option>									
 									<option value="Janus">Janus</option>
 									<option value="Legacy">Legacy</option>
+									<option value="Newborn">Newborn</option>
+									<option value="Nova">Nova</option>
+									<option value="Outsider">Outsider</option>
 									<option value="Protege">Protégé</option>
-									<option value="Doomed">Doomed</option>
-									<option value="Nova">Nova</option>							
+									<option value="Reformed">Reformed</option>
+									<option value="Scion">Scion</option>									
+									<option value="Transformed">Transformed</option>
+									<option value="" selected>Other</option>
 								</select> character.
 							</div>
 							<div class="sheet-section-title-bonds"></div>
@@ -870,6 +942,46 @@
 							<option value='Scion'><label data-i18n="thescion">The Scion</label></option>
 						</optgroup>
 					</select><br />
+					<input type="hidden" name="attr_playbook" class="sheet-playbookSelected">					
+					<input type="hidden" name="attr_joinedPairedClass" class="sheet-joinedPairedClass">
+					<div class="sheet-doomed sheet-playbook-hidden">
+						<input type="checkbox" name="attr_doomedadv_nova"> Took the Nova Burn Advancement
+					</div>
+					<div class="sheet-janus sheet-playbook-hidden">
+						<input type="checkbox" name="attr_janusadv_beacon"> Took the Beacon Drives Advancement
+					</div>
+					<div class="sheet-legacy sheet-playbook-hidden">
+						<input type="checkbox" name="attr_legacyadv_doomed"> Took the Doomed Sanctuary Advancement
+					</div>
+					<div class="sheet-nova sheet-playbook-hidden">
+						<input type="checkbox" name="attr_novaadv_bull"> Took the Bull Heart Advancement
+					</div>
+					<div class="sheet-outsider sheet-playbook-hidden">
+						<input type="checkbox" name="attr_outsideradv_janus"> Took the Janus Mask Advancement
+					</div>
+					<div class="sheet-transformed sheet-playbook-hidden">
+						<input type="checkbox" name="attr_transformedadv_doomed"> Took the Doomed Advancement
+					</div>
+					<div class="sheet-scion sheet-playbook-hidden">
+						<input type="checkbox" name="attr_scionadv_janus"> Took the Janus Mask Advancement
+					</div>
+					<div class="sheet-brain sheet-playbook-hidden">
+						<input type="checkbox" name="attr_brainadv_doomed"> Took the Doomed Sanctuary Advancement<br>
+						<input type="checkbox" name="attr_brainadv_beacon"> Took the Beacon Drives Advancement
+					</div>
+					<div class="sheet-reformed sheet-playbook-hidden">
+						<input type="checkbox" name="attr_reformedadv_beacon"> Took the Beacon Drives Advancement
+					</div>
+					<div class="sheet-newborn sheet-playbook-hidden">
+						<input type="checkbox" name="attr_newbornadv_nova"> Took the Nova Burn Advancement
+					</div>
+					<div class="sheet-innocent sheet-playbook-hidden">
+						<input type="checkbox" name="attr_innocentadv_protege"> Took the Protégé Mentor Advancement
+					</div>
+					<div class="sheet-star sheet-playbook-hidden">
+						<input type="checkbox" name="attr_staradv_legacy"> Took the Legacy Advancement
+					</div>
+					<br>
 				</div>
 			</div>
 		</div>		
@@ -899,7 +1011,7 @@
 			{{/rollBetween() result 3 6}}
 			{{#rollLess() result 2}}
 			<td class="result failure">{{result}}</td>
-			<td>oh dear</td>
+			<td>oh dear...</td>
 			{{/rollLess() result 2}}
 		</tr>
 	</table>
@@ -931,5 +1043,8 @@
 			}
 			setAttrs({"memories":total});
 		});
+	});
+	on("change:playbook", function(eventInfo) {
+		setAttrs({"doomedadv_nova" : "","janusadv_beacon" : "","legacyadv_doomed" : "","novaadv_bull" : "","outsideradv_janus" : "","transformedadv_doomed" : "","scionadv_janus" : "","brainadv_doomed" : "","brainadv_beacon" : "","reformedadv_beacon" : "","newbornadv_nova" : "","innocentadv_protege" : "","staradv_legacy" : ""});
 	});
 </script>

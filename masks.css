@@ -250,6 +250,8 @@ background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/imag
 background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/look.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }
 .charsheet .sheet-maindiv .sheet-section-title-notes {
 background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/notes.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }		
+.charsheet .sheet-maindiv .sheet-section-title-abilities {
+background: url('https://www.github.com/EtoileLion/Roll20-Masks/blob/master/images/abilities.png?raw=true') no-repeat left top, url('http://i.imgur.com/XlwKcId.png') repeat-x left top;    }		
 
 
 /* french images */		
@@ -420,16 +422,34 @@ div.repitem .sheet-desc, div.repitem .sheet-passivedesc {
 	display: none;
 }
 
-.sheet-playbookSelected {
-	display: none;
-}
-
 input.sheet-showhide:checked ~ .sheet-subbox {display: none;}
 
+.sheet-doomedadv_nova[value="on"] ~ .sheet-nova,
+.sheet-janusadv_beacon[value="on"] ~ .sheet-beacon,
+.sheet-legacyadv_doomed[value="on"] ~ .sheet-doomed-sanctuary,
+.sheet-novaadv_bull[value="on"] ~ .sheet-bull,
+.sheet-outsideradv_janus[value="on"] ~ .sheet-janus,
+.sheet-transformedadv_doomed[value="on"] ~ .sheet-doomed,
+.sheet-scionadv_janus[value="on"] ~ .sheet-janus,
+.sheet-brainadv_doomed[value="on"] ~ .sheet-doomed-sanctuary,
+.sheet-brainadv_beacon[value="on"] ~ .sheet-beacon,
+.sheet-reformedadv_beacon[value="on"] ~ .sheet-beacon,
+.sheet-newbornadv_nova[value="on"] ~ .sheet-nova,
+.sheet-innocentadv_protege[value="on"] ~ .sheet-protege,
+.sheet-staradv_legacy[value="on"] ~ .sheet-legacy,
+.sheet-page3 .sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Outsider"] ~ .sheet-outsider,
+.sheet-page3 .sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Transformed"] ~ .sheet-transformed,
+.sheet-page3 .sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Scion"] ~ .sheet-scion,
+.sheet-page3 .sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Brain"] ~ .sheet-brain,
+.sheet-page3 .sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Reformed"] ~ .sheet-reformed,
+.sheet-page3 .sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Newborn"] ~ .sheet-newborn,
+.sheet-page3 .sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Innocent"] ~ .sheet-innocent,
+.sheet-page3 .sheet-playbookSelected[value="Joined"] ~ .sheet-joinedPairedClass[value="Star"] ~ .sheet-star,
 .sheet-playbookSelected[value="Beacon"] ~ .sheet-beacon,
 .sheet-playbookSelected[value="Bull"] ~ .sheet-bull,
 .sheet-playbookSelected[value="Delinquent"] ~ .sheet-delinquent,
 .sheet-playbookSelected[value="Doomed"] ~ .sheet-doomed,
+.sheet-playbookSelected[value="Doomed"] ~ .sheet-doomed-sanctuary,
 .sheet-playbookSelected[value="Janus"] ~ .sheet-janus,
 .sheet-playbookSelected[value="Legacy"] ~ .sheet-legacy,
 .sheet-playbookSelected[value="Nova"] ~ .sheet-nova,
