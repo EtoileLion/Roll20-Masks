@@ -175,7 +175,8 @@ hr {
 .charsheet .sheet-maindiv .sheet-col .sheet-section-title-teammeet,
 .charsheet .sheet-maindiv .sheet-col .sheet-section-title-relationships,
 .charsheet .sheet-maindiv .sheet-col .sheet-section-title-look,
-.charsheet .sheet-maindiv .sheet-section-title-notes	
+.charsheet .sheet-maindiv .sheet-section-title-notes,
+.charsheet .sheet-maindiv .sheet-section-title-abilities
 {
 	height: 57px;
 	box-sizing: border-box;
@@ -771,6 +772,7 @@ input.sheet-showhide:checked ~ .sheet-subbox {display: none;}
 .sheet-roots,
 .sheet-lineage,
 .sheet-audience,
+.sheet-doomed-sanctuary select,
 .sheet-shame {
 	margin-left: 5px;
 }
@@ -801,4 +803,7 @@ input.sheet-showhide:checked ~ .sheet-subbox {display: none;}
 	text-transform: capitalize;
 	font-weight: normal;
 	font-size: x-small;
+}
+.sheet-sanctuarycon {
+	width: 92% !important;
 }
