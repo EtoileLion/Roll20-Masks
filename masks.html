@@ -993,10 +993,10 @@
 	<table>
 		<tr><th colspan="2">{{name}} rolls<br><i>{{#roll_name}}{{roll_name}}{{/roll_name}}{{#roll_mod}}{{/roll_mod}}</i></th></tr>
 		<tr>
-			{{#rollGreater() result 14}}
+			{{#rollGreater() result 13}}
 			<td class="result success">{{result}}</td>
 			<td>KAPOW!</td>
-			{{/rollGreater() result 14}}
+			{{/rollGreater() result 13}}
 			{{#rollBetween() result 10 13}}
 			<td class="result success">{{result}}</td>
 			<td>Full hit!</td>
@@ -1009,10 +1009,10 @@
 			<td class="result failure">{{result}}</td>
 			<td>Miss</td>
 			{{/rollBetween() result 3 6}}
-			{{#rollLess() result 2}}
+			{{#rollLess() result 3}}
 			<td class="result failure">{{result}}</td>
 			<td>oh dear...</td>
-			{{/rollLess() result 2}}
+			{{/rollLess() result 3}}
 		</tr>
 	</table>
 </rolltemplate>	
